@@ -15,6 +15,11 @@
 		8D42CBA31B001FC3007A7701 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D42CBA21B001FC3007A7701 /* Images.xcassets */; };
 		8D42CBA61B001FC3007A7701 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D42CBA41B001FC3007A7701 /* LaunchScreen.xib */; };
 		8D42CBB21B001FC3007A7701 /* PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBB11B001FC3007A7701 /* PlaygroundTests.swift */; };
+		8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */; };
+		8D42CBBF1B00224C007A7701 /* MainTabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */; };
+		8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC01B002307007A7701 /* GalleryViewController.swift */; };
+		8D42CBC31B002438007A7701 /* PlaygroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC21B002438007A7701 /* PlaygroundsViewController.swift */; };
+		8D42CBC91B00280A007A7701 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC81B00280A007A7701 /* Macro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,12 @@
 		8D42CBAB1B001FC3007A7701 /* PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D42CBB01B001FC3007A7701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D42CBB11B001FC3007A7701 /* PlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundTests.swift; sourceTree = "<group>"; };
+		8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabNavigationController.swift; sourceTree = "<group>"; };
+		8D42CBC01B002307007A7701 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		8D42CBC21B002438007A7701 /* PlaygroundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundsViewController.swift; sourceTree = "<group>"; };
+		8D42CBC41B0025C7007A7701 /* Playground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D42CBC81B00280A007A7701 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +98,18 @@
 			isa = PBXGroup;
 			children = (
 				8D42CB981B001FC3007A7701 /* AppDelegate.swift */,
+				8D42CBC81B00280A007A7701 /* Macro.swift */,
 				8D42CB9D1B001FC3007A7701 /* ViewController.swift */,
-				8D42CB9F1B001FC3007A7701 /* Main.storyboard */,
+				8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */,
+				8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */,
+				8D42CBC01B002307007A7701 /* GalleryViewController.swift */,
+				8D42CBC21B002438007A7701 /* PlaygroundsViewController.swift */,
+				8D42CBBD1B0021B9007A7701 /* StoryBoard */,
 				8D42CBA21B001FC3007A7701 /* Images.xcassets */,
 				8D42CBA41B001FC3007A7701 /* LaunchScreen.xib */,
 				8D42CB9A1B001FC3007A7701 /* Playground.xcdatamodeld */,
 				8D42CB961B001FC3007A7701 /* Supporting Files */,
+				8D42CBC41B0025C7007A7701 /* Playground-Bridging-Header.h */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -120,6 +137,14 @@
 				8D42CBB01B001FC3007A7701 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D42CBBD1B0021B9007A7701 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8D42CB9F1B001FC3007A7701 /* Main.storyboard */,
+			);
+			name = StoryBoard;
 			sourceTree = "<group>";
 		};
 		D4419B1E83BA77F20DD9D7D3 /* Frameworks */ = {
@@ -274,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D42CBC91B00280A007A7701 /* Macro.swift in Sources */,
 				8D42CB9E1B001FC3007A7701 /* ViewController.swift in Sources */,
+				8D42CBC31B002438007A7701 /* PlaygroundsViewController.swift in Sources */,
 				8D42CB9C1B001FC3007A7701 /* Playground.xcdatamodeld in Sources */,
+				8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */,
+				8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */,
 				8D42CB991B001FC3007A7701 /* AppDelegate.swift in Sources */,
+				8D42CBBF1B00224C007A7701 /* MainTabNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,9 +434,12 @@
 			baseConfigurationReference = 26F578904801ADAA8225CA16 /* Pods-Playground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Playground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playground/Playground-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -415,9 +448,11 @@
 			baseConfigurationReference = 67F9CC936429009B19DE450F /* Pods-Playground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Playground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playground/Playground-Bridging-Header.h";
 			};
 			name = Release;
 		};
