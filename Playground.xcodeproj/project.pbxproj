@@ -34,6 +34,7 @@
 		8D42CBF31B007710007A7701 /* snowpeakfade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D42CBED1B007710007A7701 /* snowpeakfade.jpg */; };
 		8D42CBF41B007710007A7701 /* urbancity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D42CBEE1B007710007A7701 /* urbancity.jpg */; };
 		8D42CBF51B007710007A7701 /* urbancityfade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D42CBEF1B007710007A7701 /* urbancityfade.jpg */; };
+		8D42CBF81B007C88007A7701 /* TemplateCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBF71B007C88007A7701 /* TemplateCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		8D42CBED1B007710007A7701 /* snowpeakfade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = snowpeakfade.jpg; path = TestImage/snowpeakfade.jpg; sourceTree = SOURCE_ROOT; };
 		8D42CBEE1B007710007A7701 /* urbancity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = urbancity.jpg; path = TestImage/urbancity.jpg; sourceTree = SOURCE_ROOT; };
 		8D42CBEF1B007710007A7701 /* urbancityfade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = urbancityfade.jpg; path = TestImage/urbancityfade.jpg; sourceTree = SOURCE_ROOT; };
+		8D42CBF71B007C88007A7701 /* TemplateCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				8D42CBD91B004525007A7701 /* PlayNavigationController.swift */,
-				8D42CBDB1B005E32007A7701 /* TemplateTableViewController.swift */,
-				8D42CBDE1B006CEB007A7701 /* TemplateTableCell.swift */,
+				8D42CBF71B007C88007A7701 /* TemplateCollectionViewController.swift */,
+				8D42CBF91B007CB3007A7701 /* TemplateTableViewController */,
 			);
 			name = PlayPrototyping;
 			sourceTree = "<group>";
@@ -227,6 +229,15 @@
 				8D42CBEF1B007710007A7701 /* urbancityfade.jpg */,
 			);
 			name = TestImages;
+			sourceTree = "<group>";
+		};
+		8D42CBF91B007CB3007A7701 /* TemplateTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D42CBDB1B005E32007A7701 /* TemplateTableViewController.swift */,
+				8D42CBDE1B006CEB007A7701 /* TemplateTableCell.swift */,
+			);
+			name = TemplateTableViewController;
 			sourceTree = "<group>";
 		};
 		D4419B1E83BA77F20DD9D7D3 /* Frameworks */ = {
@@ -400,6 +411,7 @@
 				8D42CBD01B002BB3007A7701 /* TestDataManager.swift in Sources */,
 				8D42CBD51B0031B9007A7701 /* PlaygroundCellNode.swift in Sources */,
 				8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */,
+				8D42CBF81B007C88007A7701 /* TemplateCollectionViewController.swift in Sources */,
 				8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */,
 				8D42CB991B001FC3007A7701 /* AppDelegate.swift in Sources */,
 				8D42CBBF1B00224C007A7701 /* MainTabNavigationController.swift in Sources */,

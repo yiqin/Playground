@@ -11,7 +11,7 @@ import UIKit
 class PlayNavigationController: UINavigationController, UIGestureRecognizerDelegate {
     
     var templateTableViewController: TemplateTableViewController?
-    
+    var templateCollectionViewController: TemplateCollectionViewController?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -20,12 +20,15 @@ class PlayNavigationController: UINavigationController, UIGestureRecognizerDeleg
     
     override init(rootViewController: UIViewController) {
         
+        /*
         templateTableViewController = TemplateTableViewController()
         // setViewControllers([templateTableViewController!], animated: false)
         
         super.init(rootViewController: templateTableViewController!)
+        */
         
-        
+        templateCollectionViewController = TemplateCollectionViewController()
+        super.init(rootViewController: templateCollectionViewController!)
         
         
         

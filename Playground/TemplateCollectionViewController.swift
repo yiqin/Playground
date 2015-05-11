@@ -1,14 +1,14 @@
 //
-//  DemoViewController.swift
+//  TemplateCollectionViewController.swift
 //  Playground
 //
-//  Created by Yi Qin on 5/10/15.
+//  Created by Yi Qin on 5/11/15.
 //  Copyright (c) 2015 Yi Qin. All rights reserved.
 //
 
 import UIKit
 
-class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCollectionViewDelegate {
+class TemplateCollectionViewController: UIViewController, ASCollectionViewDataSource, ASCollectionViewDelegate {
     
     var collectionView:ASCollectionView
     
@@ -18,17 +18,21 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
-        collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: MainCollectionViewFlowLayout(), asyncDataFetching: true)
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        flowLayout.minimumLineSpacing = 0
+        
+        collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: flowLayout, asyncDataFetching: true)
         
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         
-        collectionView.backgroundColor = UIColor(red: 235.0/255.0, green: 236.0/255.0, blue: 236.0/255.0, alpha: 1.0) // UIColor.whiteColor()        
+        collectionView.backgroundColor = UIColor(red: 235.0/255.0, green: 236.0/255.0, blue: 236.0/255.0, alpha: 1.0) // UIColor.whiteColor()
         
         collectionView.asyncDataSource = self
         collectionView.asyncDelegate = self
     }
-
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -49,7 +53,7 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     }
     
     func customizeView(){
-        title = "Gallery"
+        title = "Secret"
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
     }
     
@@ -59,21 +63,24 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     
     func collectionView(collectionView: ASCollectionView!, nodeForItemAtIndexPath indexPath: NSIndexPath!) -> ASCellNode! {
         let playground = playgrounds[indexPath.row]
-        let node = PlaygroundCellNode(testPlayground:playground)
+        let node = TemplateTableCell(testPlayground:playground)
         
         return node
     }
     
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
+        
+        /*
         println("select \(indexPath.row)")
         
         // MARK: no need to create a UIViewController()
         let vc = UIViewController()
         let playNavigationController = PlayNavigationController(rootViewController: vc)
         
-        navigationController?.presentViewController(playNavigationController, animated: true, completion: { () -> Void in
+        navigationController?.presentViewController(playNavigationController, animated: false, completion: { () -> Void in
             
         })
+        */
         
     }
     
@@ -102,5 +109,5 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
         cell?.backgroundColor = UIColor.whiteColor()
     }
     
-
+    
 }
