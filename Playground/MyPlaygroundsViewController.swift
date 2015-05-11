@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaygroundsViewController: UIViewController {
+class MyPlaygroundsViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         

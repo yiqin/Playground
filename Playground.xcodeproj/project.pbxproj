@@ -18,7 +18,7 @@
 		8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */; };
 		8D42CBBF1B00224C007A7701 /* MainTabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */; };
 		8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC01B002307007A7701 /* GalleryViewController.swift */; };
-		8D42CBC31B002438007A7701 /* PlaygroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC21B002438007A7701 /* PlaygroundsViewController.swift */; };
+		8D42CBC31B002438007A7701 /* MyPlaygroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC21B002438007A7701 /* MyPlaygroundsViewController.swift */; };
 		8D42CBC91B00280A007A7701 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC81B00280A007A7701 /* Macro.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabNavigationController.swift; sourceTree = "<group>"; };
 		8D42CBC01B002307007A7701 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
-		8D42CBC21B002438007A7701 /* PlaygroundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundsViewController.swift; sourceTree = "<group>"; };
+		8D42CBC21B002438007A7701 /* MyPlaygroundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlaygroundsViewController.swift; sourceTree = "<group>"; };
 		8D42CBC41B0025C7007A7701 /* Playground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D42CBC81B00280A007A7701 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,7 @@
 				8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */,
 				8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */,
 				8D42CBC01B002307007A7701 /* GalleryViewController.swift */,
-				8D42CBC21B002438007A7701 /* PlaygroundsViewController.swift */,
+				8D42CBC21B002438007A7701 /* MyPlaygroundsViewController.swift */,
 				8D42CBBD1B0021B9007A7701 /* StoryBoard */,
 				8D42CBA21B001FC3007A7701 /* Images.xcassets */,
 				8D42CBA41B001FC3007A7701 /* LaunchScreen.xib */,
@@ -301,7 +301,7 @@
 			files = (
 				8D42CBC91B00280A007A7701 /* Macro.swift in Sources */,
 				8D42CB9E1B001FC3007A7701 /* ViewController.swift in Sources */,
-				8D42CBC31B002438007A7701 /* PlaygroundsViewController.swift in Sources */,
+				8D42CBC31B002438007A7701 /* MyPlaygroundsViewController.swift in Sources */,
 				8D42CB9C1B001FC3007A7701 /* Playground.xcdatamodeld in Sources */,
 				8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */,
 				8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */,

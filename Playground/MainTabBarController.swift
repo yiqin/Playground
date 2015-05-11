@@ -18,7 +18,7 @@ class MainTabBarController: UITabBarController {
         let navigationController1 = MainTabNavigationController(rootViewController: vc1)
         navigationController1.title = "Gallery"
         
-        let vc2 = PlaygroundsViewController(nibName: nil, bundle: nil)
+        let vc2 = MyPlaygroundsViewController(nibName: nil, bundle: nil)
         let navigationController2 = MainTabNavigationController(rootViewController: vc2)
         navigationController2.title = "Playgrounds"
         
