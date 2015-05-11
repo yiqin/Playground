@@ -24,6 +24,7 @@
 		8D42CBCD1B002A30007A7701 /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBCC1B002A30007A7701 /* NSParseObject.swift */; };
 		8D42CBD01B002BB3007A7701 /* TestDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */; };
 		8D42CBD21B002BCB007A7701 /* TestPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD11B002BCB007A7701 /* TestPlayground.swift */; };
+		8D42CBD51B0031B9007A7701 /* PlaygroundCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8D42CBCC1B002A30007A7701 /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
 		8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataManager.swift; sourceTree = "<group>"; };
 		8D42CBD11B002BCB007A7701 /* TestPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlayground.swift; sourceTree = "<group>"; };
+		8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundCellNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */,
 				8D42CBBE1B00224C007A7701 /* MainTabNavigationController.swift */,
 				8D42CBC01B002307007A7701 /* GalleryViewController.swift */,
+				8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */,
 				8D42CBC21B002438007A7701 /* MyPlaygroundsViewController.swift */,
 				8D42CBBD1B0021B9007A7701 /* StoryBoard */,
 				8D42CBA21B001FC3007A7701 /* Images.xcassets */,
@@ -335,6 +338,7 @@
 				8D42CB9C1B001FC3007A7701 /* Playground.xcdatamodeld in Sources */,
 				8D42CBCD1B002A30007A7701 /* NSParseObject.swift in Sources */,
 				8D42CBD01B002BB3007A7701 /* TestDataManager.swift in Sources */,
+				8D42CBD51B0031B9007A7701 /* PlaygroundCellNode.swift in Sources */,
 				8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */,
 				8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */,
 				8D42CB991B001FC3007A7701 /* AppDelegate.swift in Sources */,
