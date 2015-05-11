@@ -10,8 +10,10 @@ import UIKit
 
 struct TestPlayground {
     
-    var title:String
-    var tagline:String
-    var coverImage:UIImage
-
+    var title:String = ""
+    var tagline:String = ""
+    // var coverImage:UIImage?
+    
+    
+    
 }

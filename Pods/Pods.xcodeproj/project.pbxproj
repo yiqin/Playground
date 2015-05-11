@@ -20,7 +20,6 @@
 		097373244CF48F20858F3714 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5852618FB9FCCF0F185795 /* MobileCoreServices.framework */; };
 		0AB47381BEDFC707C6E18B96 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97693F6DD4C1F19382D324FF /* QuartzCore.framework */; };
 		0AD56915873998176E7E4BBC /* ASMultiplexImageNode.h in Headers */ = {isa = PBXBuildFile; fileRef = AB851637351DE493AA671BC3 /* ASMultiplexImageNode.h */; };
-		0B0CD9FDA8DAF12CAC7E6176 /* ASDealloc2MainObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F332521F18729BD71C3B9D3C /* ASDealloc2MainObject.h */; };
 		0BCB22007A2EEA3ACB34877B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D58BE16E2D880BEE849997B9 /* CoreLocation.framework */; };
 		0D6C7043ADFD1B3B7F0AFE97 /* ASDisplayNodeExtraIvars.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DEF7FB65B714941F3C909C /* ASDisplayNodeExtraIvars.h */; };
 		0EC9C48AD030DF6EE15F3FC5 /* FBSDKSettings+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 658E2844E8270C623726601E /* FBSDKSettings+Internal.h */; };
@@ -356,7 +355,6 @@
 		E2274BC384DA862BF9B7A85A /* FBSDKGraphErrorRecoveryProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B33B5501F18EC66C19EFB /* FBSDKGraphErrorRecoveryProcessor.m */; };
 		E2964F82BDDBD9820A8D0CCD /* FBSDKPaymentObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D69D6B3D441537888CF426 /* FBSDKPaymentObserver.h */; };
 		E3C6BFE792355DBC283843B2 /* FBSDKBoltsMeasurementEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FA3FA70A3450E84CB962AE /* FBSDKBoltsMeasurementEventListener.m */; };
-		E57647BA007A13C0B5C2DE5B /* _AS-objc-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE9EA96BB25A4B34083D0D6 /* _AS-objc-internal.h */; };
 		E5C415DF5D9D226506AA0C61 /* PFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E307FD186C73520741F621 /* PFLoadingView.m */; };
 		E6B3C15E74E57FDF07968BF4 /* ASEditableTextNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1D2CB04E5A909F580FFF1F /* ASEditableTextNode.h */; };
 		E7343E2EBD3CA48178DE8D10 /* FBSDKMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1582CE86D0D7E5D889A1A971 /* FBSDKMath.m */; };
@@ -1694,7 +1692,6 @@
 				4E941E49D01A94744BFB2A2A /* ASControlNode.h in Headers */,
 				D5D638DEB043119E916298FF /* ASDataController.h in Headers */,
 				97CEE1421FB74682719F1957 /* ASDealloc2MainObject.h in Headers */,
-				0B0CD9FDA8DAF12CAC7E6176 /* ASDealloc2MainObject.h in Headers */,
 				6B698E0615E598984747A41F /* ASDisplayNode+DebugTiming.h in Headers */,
 				453F3D193AA0923461993DCA /* ASDisplayNode+Subclasses.h in Headers */,
 				D87D9D07F747D5DE477D7216 /* ASDisplayNode.h in Headers */,
@@ -1736,7 +1733,6 @@
 				F8875675F338DE422AF84155 /* NSMutableAttributedString+TextKitAdditions.h in Headers */,
 				F8AB395DE5B141935F8C66F1 /* UIView+ASConvenience.h in Headers */,
 				E978B85406255E579A4F5FEC /* _AS-objc-internal.h in Headers */,
-				E57647BA007A13C0B5C2DE5B /* _AS-objc-internal.h in Headers */,
 				65E2AC2F518E7E792DE392F7 /* _ASAsyncTransaction.h in Headers */,
 				FA84F3F8912639089AE7F470 /* _ASAsyncTransactionContainer+Private.h in Headers */,
 				F6A0CBB5774B2FF934D986DF /* _ASAsyncTransactionContainer.h in Headers */,
@@ -1927,7 +1923,7 @@
 		616AD43911927680DC79AD91 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0630;
 			};
 			buildConfigurationList = 4854C82C07F3B76E878CDB7E /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";

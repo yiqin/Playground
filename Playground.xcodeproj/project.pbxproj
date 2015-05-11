@@ -107,8 +107,7 @@
 			children = (
 				8D42CB981B001FC3007A7701 /* AppDelegate.swift */,
 				8D42CBC81B00280A007A7701 /* Macro.swift */,
-				8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */,
-				8D42CBD11B002BCB007A7701 /* TestPlayground.swift */,
+				8D42CBD31B002F1C007A7701 /* TestData */,
 				8D42CBCE1B002A88007A7701 /* Class */,
 				8D42CB9D1B001FC3007A7701 /* ViewController.swift */,
 				8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */,
@@ -165,6 +164,15 @@
 				8D42CBCA1B002A05007A7701 /* Playground.swift */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		8D42CBD31B002F1C007A7701 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */,
+				8D42CBD11B002BCB007A7701 /* TestPlayground.swift */,
+			);
+			name = TestData;
 			sourceTree = "<group>";
 		};
 		D4419B1E83BA77F20DD9D7D3 /* Frameworks */ = {

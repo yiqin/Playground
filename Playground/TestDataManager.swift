@@ -9,5 +9,14 @@
 import UIKit
 
 class TestDataManager: NSObject {
+    
+    class func getTestPlaygrounds()->[TestPlayground] {
+        
+        let playground1 = TestPlayground(title:"hi", tagline:"hihi")
+        let playground2 = TestPlayground(title:"hi", tagline:"hihi")
+        let playground3 = TestPlayground(title:"hi", tagline:"hihi")
+        
+        return [playground1,playground2,playground3]
+    }
 
 }
