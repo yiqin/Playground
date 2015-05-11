@@ -8,16 +8,25 @@
 
 import UIKit
 
-class MyPlaygroundsViewController: UIViewController {
+class MyPlaygroundsViewController: UIViewController, ASCollectionViewDataSource, ASCollectionViewDelegate {
     
+    var collectionView:ASCollectionView
     
-    
+    //MARK: Testing now....
+    var playgrounds:[TestPlayground] = []
     
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
+        collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: MainCollectionViewFlowLayout(), asyncDataFetching: true)
+        
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
+        
+        collectionView.backgroundColor = UIColor(red: 235.0/255.0, green: 236.0/255.0, blue: 236.0/255.0, alpha: 1.0) // UIColor.whiteColor()
+        
+        collectionView.asyncDataSource = self
+        collectionView.asyncDelegate = self
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -26,7 +35,38 @@ class MyPlaygroundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        customizeView()
+        
+        playgrounds = TestDataManager.getTestPlaygrounds()
+        view.addSubview(collectionView)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        collectionView.frame = self.view.bounds
+    }
+    
+    func customizeView(){
         title = "Playgrounds"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+    }
+    
+    func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
+        return playgrounds.count
+    }
+    
+    func collectionView(collectionView: ASCollectionView!, nodeForItemAtIndexPath indexPath: NSIndexPath!) -> ASCellNode! {
+        let playground = playgrounds[indexPath.row]
+        let node = PlaygroundCellNode(testPlayground:playground)
+        
+        return node
+    }
+    
+    func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
+        println("select \(indexPath.row)")
+        
     }
 
 }

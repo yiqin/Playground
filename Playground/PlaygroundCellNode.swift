@@ -26,7 +26,7 @@ class PlaygroundCellNode: ASCellNode {
         println("calculate size that fits")
         
         
-        return CGSizeMake(constrainedSize.width-xPadding, 100)
+        return CGSizeMake(constrainedSize.width-xPadding*2, 100)
     }
     
     

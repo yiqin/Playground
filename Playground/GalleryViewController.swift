@@ -18,10 +18,7 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: yPadding, left: 0, bottom: yPadding, right: 0)
-        flowLayout.minimumLineSpacing = yPadding
-        collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: flowLayout, asyncDataFetching: true)
+        collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: MainCollectionViewFlowLayout(), asyncDataFetching: true)
         
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
@@ -71,6 +68,7 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
         println("select \(indexPath.row)")
         
     }
+    
     
     // MARK: Highlight selection doesn't work at all.
     func collectionView(collectionView: UICollectionView!, shouldSelectItemAtIndexPath indexPath: NSIndexPath!) -> Bool {
