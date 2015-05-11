@@ -17,7 +17,7 @@ class TestDataManager: NSObject {
         let playground3 = TestPlayground(title:"hi", tagline:"hihi")
         let playground4 = TestPlayground(title:"hi", tagline:"hihi")
         
-        return [playground1,playground2,playground3,playground4]
+        return [playground1,playground2,playground3,playground4]+[playground1,playground2,playground3,playground4]
     }
 
 }

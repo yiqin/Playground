@@ -19,6 +19,8 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
         let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: yPadding, left: 0, bottom: yPadding, right: 0)
+        flowLayout.minimumLineSpacing = yPadding
         collectionView = ASCollectionView(frame: CGRectZero, collectionViewLayout: flowLayout, asyncDataFetching: true)
         
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -28,7 +30,6 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
         
         collectionView.asyncDataSource = self
         collectionView.asyncDelegate = self
-        
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -37,8 +38,8 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Gallery"
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        
+        customizeView()
         
         playgrounds = TestDataManager.getTestPlaygrounds()
         view.addSubview(collectionView)
@@ -50,13 +51,16 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
         collectionView.frame = self.view.bounds
     }
     
+    func customizeView(){
+        title = "Gallery"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+    }
     
     func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
         return playgrounds.count
     }
     
     func collectionView(collectionView: ASCollectionView!, nodeForItemAtIndexPath indexPath: NSIndexPath!) -> ASCellNode! {
-        // var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! RainforestCardCell
         let playground = playgrounds[indexPath.row]
         let node = PlaygroundCellNode(testPlayground:playground)
         
