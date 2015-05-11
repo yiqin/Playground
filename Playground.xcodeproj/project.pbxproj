@@ -22,6 +22,8 @@
 		8D42CBC91B00280A007A7701 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBC81B00280A007A7701 /* Macro.swift */; };
 		8D42CBCB1B002A05007A7701 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBCA1B002A05007A7701 /* Playground.swift */; };
 		8D42CBCD1B002A30007A7701 /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBCC1B002A30007A7701 /* NSParseObject.swift */; };
+		8D42CBD01B002BB3007A7701 /* TestDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */; };
+		8D42CBD21B002BCB007A7701 /* TestPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD11B002BCB007A7701 /* TestPlayground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		8D42CBC81B00280A007A7701 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		8D42CBCA1B002A05007A7701 /* Playground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		8D42CBCC1B002A30007A7701 /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
+		8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataManager.swift; sourceTree = "<group>"; };
+		8D42CBD11B002BCB007A7701 /* TestPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlayground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 			children = (
 				8D42CB981B001FC3007A7701 /* AppDelegate.swift */,
 				8D42CBC81B00280A007A7701 /* Macro.swift */,
+				8D42CBCF1B002BB3007A7701 /* TestDataManager.swift */,
+				8D42CBD11B002BCB007A7701 /* TestPlayground.swift */,
 				8D42CBCE1B002A88007A7701 /* Class */,
 				8D42CB9D1B001FC3007A7701 /* ViewController.swift */,
 				8D42CBBB1B0021AE007A7701 /* MainTabBarController.swift */,
@@ -313,12 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D42CBD21B002BCB007A7701 /* TestPlayground.swift in Sources */,
 				8D42CBC91B00280A007A7701 /* Macro.swift in Sources */,
 				8D42CB9E1B001FC3007A7701 /* ViewController.swift in Sources */,
 				8D42CBCB1B002A05007A7701 /* Playground.swift in Sources */,
 				8D42CBC31B002438007A7701 /* MyPlaygroundsViewController.swift in Sources */,
 				8D42CB9C1B001FC3007A7701 /* Playground.xcdatamodeld in Sources */,
 				8D42CBCD1B002A30007A7701 /* NSParseObject.swift in Sources */,
+				8D42CBD01B002BB3007A7701 /* TestDataManager.swift in Sources */,
 				8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */,
 				8D42CBC11B002307007A7701 /* GalleryViewController.swift in Sources */,
 				8D42CB991B001FC3007A7701 /* AppDelegate.swift in Sources */,

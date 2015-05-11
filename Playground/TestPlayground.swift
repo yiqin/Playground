@@ -1,5 +1,5 @@
 //
-//  Playground.swift
+//  TestPlayground.swift
 //  Playground
 //
 //  Created by Yi Qin on 5/10/15.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class Playground: NSParseObject {
+struct TestPlayground {
     
-    
-    
-    
-    
-    
+    var title:String
+    var tagline:String
+    var coverImage:UIImage
+
 }

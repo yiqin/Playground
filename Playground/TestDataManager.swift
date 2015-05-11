@@ -1,5 +1,5 @@
 //
-//  Playground.swift
+//  TestDataManager.swift
 //  Playground
 //
 //  Created by Yi Qin on 5/10/15.
@@ -8,11 +8,6 @@
 
 import UIKit
 
-class Playground: NSParseObject {
-    
-    
-    
-    
-    
-    
+class TestDataManager: NSObject {
+
 }
