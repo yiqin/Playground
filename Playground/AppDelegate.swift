@@ -53,11 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("U2kLe1nx1bvEk9ITJC7iAi8zJ8TMVHphSaPKlC5k",
             clientKey: "72DPteYU4KGeWko1gSJ1q0mjIl9ougkTt1DB5yip")
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
     }
     
 
