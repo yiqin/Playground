@@ -10,14 +10,22 @@ import UIKit
 
 class PlayNavigationController: UINavigationController, UIGestureRecognizerDelegate {
     
+    var templateTableViewController: TemplateTableViewController?
+    
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
     }
     
     override init(rootViewController: UIViewController) {
-        super.init(rootViewController: rootViewController)
         
+        templateTableViewController = TemplateTableViewController(nibName: nil, bundle: nil)
+        // setViewControllers([templateTableViewController!], animated: false)
+        
+        super.init(rootViewController: templateTableViewController!)
+        
+        // MARK: set navigation bar UI
         var nav = navigationBar
         nav.barTintColor = UIColor.yellowColor()
         nav.tintColor = UIColor.redColor()  // Text color....
@@ -44,6 +52,16 @@ class PlayNavigationController: UINavigationController, UIGestureRecognizerDeleg
         
         title = "test"
         view.backgroundColor = UIColor.whiteColor()
+        
+        
+        
+        
+
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
     }
     
     override func viewWillAppear(animated: Bool) {

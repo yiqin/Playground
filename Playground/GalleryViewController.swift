@@ -67,7 +67,7 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
         println("select \(indexPath.row)")
         
-        
+        // MARK: no need to create a UIViewController()
         let vc = UIViewController()
         let playNavigationController = PlayNavigationController(rootViewController: vc)
         

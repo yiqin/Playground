@@ -26,6 +26,7 @@
 		8D42CBD51B0031B9007A7701 /* PlaygroundCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */; };
 		8D42CBD71B0036F0007A7701 /* MainCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD61B0036F0007A7701 /* MainCollectionViewFlowLayout.swift */; };
 		8D42CBDA1B004525007A7701 /* PlayNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD91B004525007A7701 /* PlayNavigationController.swift */; };
+		8D42CBDC1B005E32007A7701 /* TemplateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBDB1B005E32007A7701 /* TemplateTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundCellNode.swift; sourceTree = "<group>"; };
 		8D42CBD61B0036F0007A7701 /* MainCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		8D42CBD91B004525007A7701 /* PlayNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayNavigationController.swift; sourceTree = "<group>"; };
+		8D42CBDB1B005E32007A7701 /* TemplateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */,
 				8D42CBC21B002438007A7701 /* MyPlaygroundsViewController.swift */,
 				8D42CBD91B004525007A7701 /* PlayNavigationController.swift */,
+				8D42CBDB1B005E32007A7701 /* TemplateTableViewController.swift */,
 				8D42CBBD1B0021B9007A7701 /* StoryBoard */,
 				8D42CBA21B001FC3007A7701 /* Images.xcassets */,
 				8D42CBA41B001FC3007A7701 /* LaunchScreen.xib */,
@@ -349,6 +352,7 @@
 				8D42CB9C1B001FC3007A7701 /* Playground.xcdatamodeld in Sources */,
 				8D42CBCD1B002A30007A7701 /* NSParseObject.swift in Sources */,
 				8D42CBD71B0036F0007A7701 /* MainCollectionViewFlowLayout.swift in Sources */,
+				8D42CBDC1B005E32007A7701 /* TemplateTableViewController.swift in Sources */,
 				8D42CBD01B002BB3007A7701 /* TestDataManager.swift in Sources */,
 				8D42CBD51B0031B9007A7701 /* PlaygroundCellNode.swift in Sources */,
 				8D42CBBC1B0021AE007A7701 /* MainTabBarController.swift in Sources */,
