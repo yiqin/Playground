@@ -30,7 +30,7 @@ class PlayNavigationController: UINavigationController, UIGestureRecognizerDeleg
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.Default
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -65,9 +65,26 @@ class PlayNavigationController: UINavigationController, UIGestureRecognizerDeleg
         
         println("handleTap")
         
-        dismissViewControllerAnimated(true, completion: { () -> Void in
+        let alertController = UIAlertController(title: "Playground Setting", message: "", preferredStyle: .Alert)
+        
+        let EditAction = UIAlertAction(title: "Edit", style: .Default) { (action) in
+            self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                
+            })
+        }
+        alertController.addAction(EditAction)
+        
+        let BackAction = UIAlertAction(title: "Back", style: .Default) { (action) in
+            self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                
+            })
+        }
+        alertController.addAction(BackAction)
+        
+        presentViewController(alertController, animated: true) {
             
-        })
+        }
+        
     }
     
     
