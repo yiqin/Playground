@@ -78,7 +78,7 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     }
     
     
-    // MARK: Highlight selection doesn't work at all.
+    // MARK: Highlight selection
     func collectionView(collectionView: UICollectionView!, shouldSelectItemAtIndexPath indexPath: NSIndexPath!) -> Bool {
         return true
     }
@@ -87,5 +87,20 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
         let cell = self.collectionView.cellForItemAtIndexPath(indexPath)
         cell?.backgroundColor = UIColor.whiteColor()
     }
+    
+    func collectionView(collectionView: UICollectionView!, shouldHighlightItemAtIndexPath indexPath: NSIndexPath!) -> Bool {
+        return true
+    }
+    
+    func collectionView(collectionView: UICollectionView!, didHighlightItemAtIndexPath indexPath: NSIndexPath!) {
+        let cell = self.collectionView.nodeForItemAtIndexPath(indexPath)
+        cell?.backgroundColor = UIColor.redColor()
+    }
+    
+    func collectionView(collectionView: UICollectionView!, didUnhighlightItemAtIndexPath indexPath: NSIndexPath!) {
+        let cell = self.collectionView.nodeForItemAtIndexPath(indexPath)
+        cell?.backgroundColor = UIColor.whiteColor()
+    }
+    
 
 }
