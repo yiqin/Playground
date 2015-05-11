@@ -53,6 +53,11 @@ class TemplateTableViewController: UIViewController, ASTableViewDataSource, ASTa
         tableView.frame = self.view.bounds
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     func customizeView(){
         title = "Secret"
         navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
