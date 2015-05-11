@@ -14,6 +14,4 @@ struct TestPlayground {
     var tagline:String = ""
     // var coverImage:UIImage?
     
-    
-    
 }
