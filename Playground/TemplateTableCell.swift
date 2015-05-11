@@ -68,7 +68,7 @@ class TemplateTableCell: ASCellNode {
         
         
         
-        return CGSizeMake(constrainedSize.width-xPadding*2, 200)
+        return CGSizeMake(constrainedSize.width, 200)
     }
     
     
