@@ -67,6 +67,14 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
         println("select \(indexPath.row)")
         
+        
+        let vc = UIViewController()
+        let playNavigationController = PlayNavigationController(rootViewController: vc)
+        
+        navigationController?.presentViewController(playNavigationController, animated: true, completion: { () -> Void in
+            
+        })
+        
     }
     
     

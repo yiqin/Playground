@@ -25,6 +25,7 @@
 		8D42CBD21B002BCB007A7701 /* TestPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD11B002BCB007A7701 /* TestPlayground.swift */; };
 		8D42CBD51B0031B9007A7701 /* PlaygroundCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */; };
 		8D42CBD71B0036F0007A7701 /* MainCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD61B0036F0007A7701 /* MainCollectionViewFlowLayout.swift */; };
+		8D42CBDA1B004525007A7701 /* PlayNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42CBD91B004525007A7701 /* PlayNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		8D42CBD11B002BCB007A7701 /* TestPlayground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlayground.swift; sourceTree = "<group>"; };
 		8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundCellNode.swift; sourceTree = "<group>"; };
 		8D42CBD61B0036F0007A7701 /* MainCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		8D42CBD91B004525007A7701 /* PlayNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8D42CBC01B002307007A7701 /* GalleryViewController.swift */,
 				8D42CBD41B0031B9007A7701 /* PlaygroundCellNode.swift */,
 				8D42CBC21B002438007A7701 /* MyPlaygroundsViewController.swift */,
+				8D42CBD91B004525007A7701 /* PlayNavigationController.swift */,
 				8D42CBBD1B0021B9007A7701 /* StoryBoard */,
 				8D42CBA21B001FC3007A7701 /* Images.xcassets */,
 				8D42CBA41B001FC3007A7701 /* LaunchScreen.xib */,
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D42CBD21B002BCB007A7701 /* TestPlayground.swift in Sources */,
+				8D42CBDA1B004525007A7701 /* PlayNavigationController.swift in Sources */,
 				8D42CBC91B00280A007A7701 /* Macro.swift in Sources */,
 				8D42CBCB1B002A05007A7701 /* Playground.swift in Sources */,
 				8D42CBC31B002438007A7701 /* MyPlaygroundsViewController.swift in Sources */,
