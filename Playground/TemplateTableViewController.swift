@@ -20,11 +20,15 @@ class TemplateTableViewController: UIViewController, ASTableViewDataSource, ASTa
     init(){
         self.tableView = ASTableView()
         
+        
+        
         super.init(nibName: nil, bundle: nil)
         title = "My List".uppercaseString
         
         tableView.asyncDataSource = self
         tableView.asyncDelegate = self
+        
+        
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -35,9 +39,12 @@ class TemplateTableViewController: UIViewController, ASTableViewDataSource, ASTa
         super.viewDidLoad()
         
         customizeView()
-        
-        playgrounds = TestDataManager.getTestPlaygrounds()
         view.addSubview(tableView)
+        
+        // https://github.com/facebook/AsyncDisplayKit/issues/292
+        tableView.beginUpdates()
+        playgrounds = TestDataManager.getTestPlaygrounds()
+        tableView.endUpdates()
     }
     
     override func viewWillLayoutSubviews() {
@@ -63,7 +70,7 @@ class TemplateTableViewController: UIViewController, ASTableViewDataSource, ASTa
     
     func tableView(tableView: ASTableView!, nodeForRowAtIndexPath indexPath: NSIndexPath!) -> ASCellNode! {
         let playground = playgrounds[indexPath.row]
-        let node = PlaygroundCellNode(testPlayground: playground)
+        let node = TemplateTableCell(testPlayground: playground)
         return node
     }
     
