@@ -71,7 +71,7 @@ class GalleryViewController: UIViewController, ASCollectionViewDataSource, ASCol
         let vc = UIViewController()
         let playNavigationController = PlayNavigationController(rootViewController: vc)
         
-        navigationController?.presentViewController(playNavigationController, animated: true, completion: { () -> Void in
+        navigationController?.presentViewController(playNavigationController, animated: false, completion: { () -> Void in
             
         })
         

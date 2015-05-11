@@ -25,6 +25,13 @@ class PlayNavigationController: UINavigationController, UIGestureRecognizerDeleg
         
         super.init(rootViewController: templateTableViewController!)
         
+        
+        
+        
+        
+        
+        
+        
         // MARK: set navigation bar UI
         var nav = navigationBar
         nav.barTintColor = UIColor.yellowColor()

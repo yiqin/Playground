@@ -14,13 +14,11 @@ class TemplateTableViewController: UIViewController, ASTableViewDataSource, ASTa
     var tableView: ASTableView
     
     //MARK: Testing now....
-    var playgrounds:[TestPlayground] = []
+    var playgrounds:[TestPlayground] = TestDataManager.getTestPlaygrounds()
     
     
     init(){
         self.tableView = ASTableView()
-        
-        
         
         super.init(nibName: nil, bundle: nil)
         title = "My List".uppercaseString
@@ -43,7 +41,7 @@ class TemplateTableViewController: UIViewController, ASTableViewDataSource, ASTa
         
         // https://github.com/facebook/AsyncDisplayKit/issues/292
         tableView.beginUpdates()
-        playgrounds = TestDataManager.getTestPlaygrounds()
+        
         tableView.endUpdates()
     }
     
