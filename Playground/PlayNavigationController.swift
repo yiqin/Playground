@@ -20,7 +20,7 @@ class PlayNavigationController: UINavigationController, UIGestureRecognizerDeleg
     
     override init(rootViewController: UIViewController) {
         
-        templateTableViewController = TemplateTableViewController(nibName: nil, bundle: nil)
+        templateTableViewController = TemplateTableViewController()
         // setViewControllers([templateTableViewController!], animated: false)
         
         super.init(rootViewController: templateTableViewController!)
