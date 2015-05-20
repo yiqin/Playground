@@ -52,7 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupParse(launchOptions: [NSObject: AnyObject]?){
         Parse.setApplicationId("U2kLe1nx1bvEk9ITJC7iAi8zJ8TMVHphSaPKlC5k",
             clientKey: "72DPteYU4KGeWko1gSJ1q0mjIl9ougkTt1DB5yip")
-        
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (successed:Bool, error:NSError?) -> Void in
+            
+        })
     }
     
 
