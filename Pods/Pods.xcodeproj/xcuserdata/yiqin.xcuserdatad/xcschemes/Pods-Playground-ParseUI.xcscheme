@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AFD667F12B028868E98685F2"
+               BlueprintIdentifier = "741B427A242E7CDC6DEF10E0"
                BuildableName = "libPods-Playground-ParseUI.a"
                BlueprintName = "Pods-Playground-ParseUI"
                ReferencedContainer = "container:Pods.xcodeproj">

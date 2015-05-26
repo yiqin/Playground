@@ -1,7 +1,7 @@
 PODS:
-  - AsyncDisplayKit (HEAD based on 1.1.1):
-    - AsyncDisplayKit/ASDealloc2MainObject (= HEAD based on 1.1.1)
-  - AsyncDisplayKit/ASDealloc2MainObject (HEAD based on 1.1.1)
+  - AsyncDisplayKit (HEAD based on 1.2):
+    - AsyncDisplayKit/ASDealloc2MainObject (= HEAD based on 1.2)
+  - AsyncDisplayKit/ASDealloc2MainObject (HEAD based on 1.2)
   - Bolts (1.1.5):
     - Bolts/AppLinks (= 1.1.5)
     - Bolts/Tasks (= 1.1.5)
@@ -17,9 +17,9 @@ PODS:
   - FBSDKCoreKit/no-arc (4.1.0):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc
-  - Parse (1.7.2.2):
+  - Parse (1.7.4):
     - Bolts/Tasks (>= 1.1.5)
-  - ParseUI (1.1.3):
+  - ParseUI (1.1.4):
     - Parse (~> 1.7)
 
 DEPENDENCIES:
@@ -29,10 +29,10 @@ DEPENDENCIES:
   - ParseUI (~> 1.1.3)
 
 SPEC CHECKSUMS:
-  AsyncDisplayKit: 2c355970d1aabe00608211d9a50e35b7a5dc0ae4
+  AsyncDisplayKit: 32d5b9112b8c1b6644b54429e0cda4fbf6563781
   Bolts: aac24961496d504aa56fc267cde95162a71bac39
   FBSDKCoreKit: 469ed167195f860dbd2b4c4bbaa33d2e90598db9
-  Parse: 6187586a80eb7b4960d755f85e1353148a611f87
-  ParseUI: 1a68e9cebc3bd458eed9605ce7b33d7cc082f473
+  Parse: 6ca512c6e860b66739c95151b2f76ac4712b7842
+  ParseUI: d1228541b02a36a7354c8f47747f5f7a89cf1ff0
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.37.1
